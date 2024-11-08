@@ -1,0 +1,32 @@
+﻿#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns, one for each day of the week */
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* Each day in the calendar will look like a box */
+.day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Style for the event text inside a day */
+.event {
+    font-size: 0.8em;
+    color: white;
+    background-color: #007bff;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
